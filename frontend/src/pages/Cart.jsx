@@ -23,7 +23,8 @@ const Cart = () => {
         <hr />
         {
           food_list.map((item,index) => {
-            if(cartItem[item._id] > 0){
+            // if(cartItem[item._id] > 0){
+            if(cartItem[item.id] > 0){
               return (
                 <div className='flex gap-3'>
                   <img className='w-28' src={url+ "/images/"+item.image} alt="" />
